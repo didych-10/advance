@@ -1,0 +1,56 @@
+.container {
+display: flex;
+width: 230px;
+height: 343px;
+border: 1px solid black;
+border-radius: 5px;
+margin: auto;
+flex-wrap: wrap;
+background-color: #5c5b56;
+}
+
+form{
+    max-width: 100%;
+}
+input {
+display: block;
+height: 55px;
+width: 97%;
+font-size: 35px;
+background-color: #5a5b56;
+border: none;
+color: #ffffff;
+text-align: right;
+margin: auto;
+overflow: hidden;
+}
+.input{
+    min-width: 100%;
+    display: block;
+}
+
+.item {
+
+    width: 55px;
+    height: 55px;
+    background-color: #838280;
+    margin: 1px;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.zero {
+
+    width: 112px;
+}
+.clean{
+
+    background-color: #6a6967;
+}
+.sign{
+    background-color: #f19e42;
+}
