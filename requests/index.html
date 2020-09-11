@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="signUp" style="margin: auto; width: 60%;">
+        <h1 style="text-align: center;">Please Sign Up</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">First name</label>
+              <input type="text" id="name" class="form-control" name="firstname" placeholder="First name">
+              <div class="errors" style="height: 20px; color: red;"></div>
+              <label for="exampleInputEmail1">Last name</label>
+              <input type="text" id="lname" class="form-control" name="lastname" placeholder="Last name">
+              <div class="errors" style="height: 20px; color: red;"></div>
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" id="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+              <div class="errors" style="height: 20px; color: red;"></div>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" id="pass" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+              <div class="errors" style="height: 20px; color: red;"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+            <span class="signInNow" style="height: 14px; color: royalblue; cursor: pointer;">Sign in now</span>
+          </form>
+    </div>
+<div class="signIn" style="margin: auto; width: 60%; display: none;">
+<h1 style="text-align: center;">Sign in</h1>
+<form id="signForm">
+  <div class="form-group">      
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emailSign" placeholder="Enter email">
+    <div class="errors" style="height: 20px; color: red;"></div>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="passwordSign" placeholder="Password">
+    <div class="errors" style="height: 20px; color: red;"></div>
+  </div>
+
+  <button type="submit" class="btn btn-success" style="width: 100%;">Sign In</button>
+  <span class="signUpNow" style="height: 14px; color: royalblue; cursor: pointer;">Sign up now</span>
+</form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
