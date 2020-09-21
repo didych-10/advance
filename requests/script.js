@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const regExpPass = /^[a-zA-Z0-9]+/;
     const regExpEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
     const validateElem = (elem) => {
-if(elem.name === 'firstname') {
+        if(elem.name === 'firstname') {
     if(!regExpName.test(elem.value) && elem.value!== "") {
         elem.nextElementSibling.textContent = 'Введіть правильно';
     } else { 
@@ -96,6 +96,8 @@ signUpBtn.onclick = (event) => {
 
     signIn.style.display = 'block';
     signUp.style.display = 'none';
+
+    // check validation
     locStorage();
 }
 
